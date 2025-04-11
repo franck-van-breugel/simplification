@@ -42,9 +42,10 @@ To install the code, you need
 
 Assuming that you want install the code in the folder C:/Users/Franck/Documents/simplification
 
-1. Create the folder: ```cd C:/Users/Franck/Documents/simplification```
+1. Go to the folder: ```cd C:/Users/Franck/Documents/```
 2. In that folder, clone the repository: ```git clone https://github.com/franck-van-breugel/simplification.git```
-3. In that folder, run the gradle wrapper: ```gradlew build```
+3. Go to the folder: ```cd C:/Users/Franck/Documents/simplification/```
+3. In that folder, run the gradle wrapper: ```./gradlew build```
 
 Running
 -------
