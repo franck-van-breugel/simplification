@@ -1,0 +1,25 @@
+plugins {
+    // apply the antlr plugin to add support for ANTLR4
+    id 'antlr'
+    // apply the application plugin for running Java applications
+    id 'application'
+    // apply the shadow plugin to bundle the jar files
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // use ANTLR version 4
+    antlr "org.antlr:antlr4:4.9.2" 
+}
+
+generateGrammarSource {    
+    arguments += ["-visitor"]
+}
+
+application {
+    mainClass = 'Simplify'
+}
